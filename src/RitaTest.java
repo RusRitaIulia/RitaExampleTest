@@ -31,9 +31,34 @@ public class RitaTest {
         return true;
 
     }
+    public static void sumProductMinMax(int a, int b, int c){
+        int sum = 0, prod=1, min, max;
+
+        sum=a+b+c;
+        prod=a*b*c;
+
+        min = a;
+        if (b < min) {
+            min = b;
+        }
+        if (c < min) {
+            min = c;
+        }
+        max = a;
+        if (b >max) {
+            max= b;
+        }
+        if (c >max) {
+            max = c;
+        }
+        System.out.println("Sum is: "+sum);
+        System.out.println("Prd is: "+prod);
+        System.out.println("Min is: "+min);
+        System.out.println("Max is: "+max);
+    }
 
     public static void main(String[] args) {
-        RitaTest obj=new RitaTest();
+       RitaTest obj=new RitaTest();
        checkOddNumbers(10);
        checkOddNumbers(5);
        sumAverageInt(100);
@@ -42,6 +67,6 @@ public class RitaTest {
            System.out.println("True");
        else
            System.out.println("False");
-
+        sumProductMinMax(10,15,20);
     }
 }
