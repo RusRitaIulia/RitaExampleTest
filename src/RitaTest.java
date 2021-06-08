@@ -1,4 +1,4 @@
-import java.sql.SQLOutput;
+
 
 public class RitaTest {
     public static void checkOddNumbers(int a){
